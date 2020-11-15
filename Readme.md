@@ -15,7 +15,7 @@ These instructions will use Forgemod|CurseForge interchangably. Minecraft Forge 
 For instructions on getting started with Minecraft on Twitch, reference [How to Play Minecraft with Twitch App](https://help.twitch.tv/s/article/How-to-Play-Minecraft-with-Twitch-App?language=en_US)
 
 ### Forgemod|CurseForge Server Setup
-This setup assumes a fresh install of Ubuntu 20.04+. The following actions will clone this repo and install all the requited software and dependencies to get started. 
+This setup assumes a fresh install of Ubuntu 20.04. The following actions will clone this repo and install all the requited software and dependencies to get started. 
 
 ```bash
 # Clone this repo
