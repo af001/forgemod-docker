@@ -32,13 +32,13 @@ ip6tables-save > /etc/iptables/rules.v6
 
 # Install Gvisor
 curl -fsSL https://gvisor.dev/archive.key | sudo apt-key add -
-add-apt-repository "deb https://storage.googleapis.com/gvisor/releases release main"
+add-apt-repository "deb https://storage.googleapis.com/gvisor/releases release main" -y
 DEBIAN_FRONTEND=noninteractive apt update && apt -y install runsc
 
 # Install Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 apt-key fingerprint 0EBFCD88
-add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" -y
 DEBIAN_FRONTEND=noninteractive apt update && apt -y install docker-ce docker-ce-cli containerd.io
 
 # Chmod all scripts
