@@ -26,7 +26,7 @@ chmod 755 setup-ubuntu.sh
 ```
 
 ### Forgemod|CurseForge Docker Creation
-The default rcmon password is ```bash changemepassword```. If you wish to change or disable rcmon, it is recommended to make the changes prior to running one of the start scripts. In the following example, the CurseForge server that is intended to be started is ```bash Valhelsiaa```. On an internal LAN, the risk is minimal since the Docker is running Alpine with Gvisor. 
+The default rcmon password is ```changemepassword```. If you wish to change or disable rcmon, it is recommended to make the changes prior to running one of the start scripts. In the following example, the CurseForge server that is intended to be started is ```Valhelsiaa```. On an internal LAN, the risk is minimal since the Docker is running Alpine with Gvisor. 
 
 ```bash
 cd forgemod-docker/valhelsia-forge
