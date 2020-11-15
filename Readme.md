@@ -1,8 +1,8 @@
-# Forgemod Docker - Builder Scripts
-This repo contains a set of scripts that can be used to install Forgemod servers as Docker containers. Users can interact with the Minecraft servers using Twitch modpacks for Minecraft. These containers should not be exposed to the Internet without additional Iptable rules that restrict access to a set of IP addresses. This build is ideal for home labs and/or local LANs. 
+# Forgemod/CurseForge Docker - Builder Scripts
+This repo contains a set of scripts that can be used to install Forgemod/CurseForge servers as Docker containers. Users can interact with the Minecraft servers using Twitch modpacks for Minecraft. These containers should not be exposed to the Internet without additional iptable rules that restrict access to a set of trusted IP addresses. This build is ideal for home labs and/or local LANs. 
 
 Whats Included:
-* Script to install the required dependencies to install Docker, Gvisor, and Git
+* Script to install the required dependencies for Docker, Gvisor, and Git
 * Installation of [Gvisor](https://gvisor.dev/) runsc runtime - Application Kernel for Containers
 * Installation of [Docker](https://www.docker.com/)
 * Installation of [Mcrcon](https://github.com/tiiffi/mcrcon) for managing running servers
