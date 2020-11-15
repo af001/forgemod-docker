@@ -9,7 +9,7 @@ This repo contains a set of scripts that can be used to install Forgemod/CurseFo
 * Start scripts for select modservers on [Forgemod](https://files.minecraftforge.net/) | [CurseForge](https://www.curseforge.com/minecraft/modpacks)
 * Default INPUT iptable rules that only allow 22/tcp for SSH. Note: Exposed Minecraft ports will still be open due to PREROUTING rules that are maintained by Docker when a container is running. 
 
-## Twitch modpacks
+### Twitch modpacks
 For instructions on getting started with Minecraft on Twitch, reference [How to Play Minecraft with Twitch App](https://help.twitch.tv/s/article/How-to-Play-Minecraft-with-Twitch-App?language=en_US)
 
 ### Forgemod Server Setup
