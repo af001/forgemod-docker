@@ -1,6 +1,8 @@
 # Forgemod/CurseForge Docker - Builder Scripts
 This repo contains a set of scripts that can be used to install Forgemod/CurseForge servers as Docker containers. Users can interact with the Minecraft servers using Twitch modpacks for Minecraft. These containers should not be exposed to the Internet without additional iptable rules that restrict access to a set of trusted IP addresses. This build is ideal for home labs and/or local LANs. 
 
+These instructions will use Forgemod|CurseForge interchangably. Minecraft Forge is the project that builds Mincraft so that it can be modded. CurseForge is a set of modpacks that are built using the Minecraft Forge server.  
+
 **Whats Included:**
 * Script to install the required dependencies for Docker, Gvisor, and Git
 * Installation of [Gvisor](https://gvisor.dev/) runsc runtime - Application Kernel for Containers
@@ -12,8 +14,8 @@ This repo contains a set of scripts that can be used to install Forgemod/CurseFo
 ### Twitch modpacks
 For instructions on getting started with Minecraft on Twitch, reference [How to Play Minecraft with Twitch App](https://help.twitch.tv/s/article/How-to-Play-Minecraft-with-Twitch-App?language=en_US)
 
-### Forgemod Server Setup
-This setup assumes a fresh install of Ubuntu 20.04+. 
+### Forgemod|CurseForge Server Setup
+This setup assumes a fresh install of Ubuntu 20.04+. The following actions will clone this repo and install all the requited software and dependencies to get started. 
 
 ```bash
 # Clone this repo
@@ -23,7 +25,7 @@ chmod 755 setup-ubuntu.sh
 ./setup-ubuntu.sh
 ```
 
-### Forgemod Docker Creation
+### Forgemod|CurseForge Docker Creation
 The default rcmon password is ```bash changemepassword```. If you wish to change or disable rcmon, it is recommended to make the changes prior to running one of the start scripts. In the following example, the CurseForge server that is intended to be started is ```bash Valhelsiaa```. On an internal LAN, the risk is minimal since the Docker is running Alpine with Gvisor. 
 
 ```bash
