@@ -58,5 +58,5 @@ By default, [Mcrcon](https://www.mankier.com/1/mcrcon) is installed on the serve
 sudo mcrcon -H 127.0.0.1 -P <rcon_port> -p chamgemepassword
 ```
 
-### Currnet Forge Server Scripts
+### Current Forge Server Scripts
 * [Valhelsia](https://www.curseforge.com/minecraft/modpacks/valhelsia-3/files) - 1.16.3 
