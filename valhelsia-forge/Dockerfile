@@ -6,8 +6,6 @@ RUN apk add --no-cache --virtual .build-deps                        \
     openjdk8-jre-base                                               && \
     mkdir -p /opt/valhelsia
 
-COPY Valhelsia_SERVER-pre5-3.1.0.zip /opt/valhelsia
-
 WORKDIR /opt/valhelsia
 
 RUN wget -q https://edge.forgecdn.net/files/3110/654/Valhelsia_SERVER-pre5-3.1.0.zip    && \
