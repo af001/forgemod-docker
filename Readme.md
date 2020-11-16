@@ -1,5 +1,5 @@
 # Forgemod/CurseForge Docker - Builder Scripts
-This repo contains a set of scripts that can be used to install Forgemod/CurseForge servers as Docker containers. Users can interact with the Minecraft servers using Twitch modpacks for Minecraft. These containers should not be exposed to the Internet without additional iptable rules that restrict access to a set of trusted IP addresses. This build is ideal for home labs and/or local LANs. 
+This repo contains a set of scripts that can be used to install Forgemod/CurseForge servers as Docker containers. Users can interact with the Minecraft servers using Twitch modpacks for Minecraft. These containers should not be exposed to the internet without additional iptable rules that restrict access to a set of trusted IP addresses. This build is ideal for home labs and/or local LANs. 
 
 These instructions will use Forgemod|CurseForge interchangably. Minecraft Forge is the project that builds Mincraft so that it can be modded. CurseForge is a set of modpacks that are built using the Minecraft Forge server.  
 
