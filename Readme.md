@@ -22,7 +22,7 @@ This setup assumes a fresh install of Ubuntu 20.04. The following actions will c
 git clone https://github.com/af001/forgemod-docker.git
 cd forgemod-docker/docker-ubuntu-setup
 chmod 755 setup-ubuntu.sh
-./setup-ubuntu.sh
+sudo sh setup-ubuntu.sh
 ```
 
 ### Forgemod|CurseForge Docker Creation
@@ -44,7 +44,7 @@ To build a container with one of the provided CurseForge modded servers, the fol
 ```bash
 # Build a Docker container and run it to expose a port.
 cd forgemod-docker/docker-ubuntu-setup
-./start-valhelsia.sh
+sudo sh start-valhelsia.sh
 ```
 
 ### Multiplay Connect
@@ -55,7 +55,7 @@ By default, [Mcrcon](https://www.mankier.com/1/mcrcon) is installed on the serve
 
 ```bash
 # Connect to a Minecraft server on the Ubuntu machine hosting docker containers. This should be modified if connecting from a remote machine on the same LAN. 
-mcrcon -H 127.0.0.1 -P <rcon_port> -p chamgemepassword
+sudo mcrcon -H 127.0.0.1 -P <rcon_port> -p chamgemepassword
 ```
 
 ### Currnet Forge Server Scripts
