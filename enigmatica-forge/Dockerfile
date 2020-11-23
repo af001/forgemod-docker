@@ -9,15 +9,15 @@ RUN apk add --no-cache --virtual .build-deps                        \
 WORKDIR /opt/enigmatica
 
 RUN wget -q https://edge.forgecdn.net/files/3058/671/Enigmatica6Server-0.2.17.zip    && \
-    unzip Enigmatica6Server-0.2.17.zip                                               && \
-    mv Enigmatica6Server-0.2.17 server                                               && \
+    unzip Enigmatica6Server-0.2.17.zip                                     && \
     rm -f /opt/enigmatica/Enigmatica6Server-0.2.17.zip                                && \
-    chmod 755 /opt/enigmatica/server/ServerStart.sh                                      && \
-    mkdir {backups,tools}
-
-COPY server.properties /opt/enigmatica/server
-COPY eula.txt /opt/enigmatica/server
+    wget -q https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.1-32.0.108/forge-1.16.1-32.0.108-installer.jar -O installer.jar && \
+    java -jar installer.jar --installServer && \
+    rm -rf installer.jar 
+    
+COPY server.properties /opt/enigmatica
+COPY eula.txt /opt/enigmatica
 
 EXPOSE 32510 32511
 
-CMD cd /opt/enigmatica/server && sh server-start.sh
+CMD cd /opt/enigmatica && java -jar -Xms1G -Xmx4G -d64 -server -XX:+AggressiveOpts -XX:+UseConcMarkSweepGC -XX:+UnlockExperimentalVMOptions -XX:+UseParNewGC -XX:+ExplicitGCInvokesConcurrent -XX:+UseFastAccessorMethods -XX:+OptimizeStringConcat -XX:+UseAdaptiveGCBoundary forge-1.16.1-32.0.108.jar nogui
