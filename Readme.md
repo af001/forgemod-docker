@@ -29,7 +29,12 @@ sudo sh setup-ubuntu.sh
 The default rcmon password is ```changemepassword```. If you wish to change or disable rcmon, it is recommended to make the changes prior to running one of the start scripts. In the following example, the CurseForge server that is intended to be started is ```Valhelsiaa```. On an internal LAN, the risk is minimal since the Docker is running Alpine with Gvisor. 
 
 ```bash
+# Valhelsia
 cd forgemod-docker/valhelsia-forge
+vim server.properties
+
+# Enigmatica
+cd forgemod-docker/enigmatica-forge
 vim server.properties
 
 # To disable rcon
@@ -44,7 +49,12 @@ To build a container with one of the provided CurseForge modded servers, the fol
 ```bash
 # Build a Docker container and run it to expose a port.
 cd forgemod-docker/docker-ubuntu-setup
+
+# Start Valhelsia Docker
 sudo sh start-valhelsia.sh
+
+# Start Enigmatica Docker
+sudo sh start-enigmatica.sh
 ```
 
 ### Multiplay Connect
@@ -60,3 +70,4 @@ sudo mcrcon -H 127.0.0.1 -P <rcon_port> -p chamgemepassword
 
 ### Current Forge Server Scripts
 * [Valhelsia](https://www.curseforge.com/minecraft/modpacks/valhelsia-3/files) - 1.16.3 
+* [Enigmatica](https://www.curseforge.com/minecraft/modpacks/enigmatica6) - 1.16.1
